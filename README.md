@@ -22,6 +22,8 @@ We used Streamlit for creating our website. Our goal with the site was to create
 
 The aggregation is done using the federated averaging model. At the local training step of the federated methodology, a regularization function taken from `Learning without Forgetting - Li and Hoiem` is used for training the model and to prevent overfitting on recent/new training data. The model was deployed and trained over PyTorch so as to increase transperancy and ease of use between the central host server and the volunteers training the model. 
 
+We used he HumAID Twitter dataset which consists of several thousands of manually annotated tweets that have been collected during 19 major natural disaster events including earthquakes, hurricanes, wildfires, and floods, which happened from 2016 to 2019 across different parts of the World (Alam et al., 2021). 
+
 ## Challenges we ran into
 
 Word Embeddings are memory intensive and we used `Effective Dimensionality Reduction for Word Embeddings - Vikas Raunak et al.` to reduce memory demand. In our utilization of the above library, we also contributed to the open-source community by creating an executable Python3 version of it.
