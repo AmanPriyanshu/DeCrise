@@ -16,7 +16,7 @@ The classes include:
 4. Missing or found people
 5. Unrelated
 
-<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/wordclouds.PNG" width="1000" style="vertical-align:middle">
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/wordclouds.PNG" style="width:100%;" style="vertical-align:middle">
 
 Our analysis focuses on three disaster events for analysis:
 
@@ -30,7 +30,7 @@ This can allow public support systems such as police officers, firefighters and 
 
 We used Streamlit for creating our website. Our goal with the site was to create an easy to understand and navigate website. We used a minimalistic design coupled with a backend hosted on Heroku. Our backend allows volunteers/support systems to push locally trained models for aggregation on the central server at Streamlit. At the central server, the regularization function is used to check for variational changes, from previously trained models. If found, we send the aggregated model for further analysis on a test set, however, if within limits we apply it as the new model.
 
-<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/code.PNG" width="1000" style="vertical-align:middle">
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/code.PNG" style="width:100%;" style="vertical-align:middle">
 
 The aggregation is done using the federated averaging model. At the local training step of the federated methodology, a regularization function taken from `Learning without Forgetting - Li and Hoiem` is used for training the model and to prevent overfitting on recent/new training data. The model was deployed and trained over PyTorch so as to increase transperancy and ease of use between the central host server and the volunteers training the model.
 
@@ -46,7 +46,7 @@ Word Embeddings are memory intensive and we used `Effective Dimensionality Reduc
 
 Creating a continual and federated learning algorithm for crisis management is a novel approach. Although proposed before it utilised sentence encoders which are high computation and memory intensive making it impossible to deploy. Therefore, we used GloVe embeddings and further contracted their effective dimensions following Raunak et al.'s `Effective Dimensionality Reduction for Word Embeddings`.
 
-<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/progression.jpg" width="700" style="vertical-align:middle">
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/progression.jpg" style="width:100%;" style="vertical-align:middle">
 
 Deploying an online/life-long learning NLP model for crisis management. The utilization of a volunteer system, further crowdsources the learning capacity of the model, making it more diverse and learn across a lot more samples than individual contributors could ever do.
 
