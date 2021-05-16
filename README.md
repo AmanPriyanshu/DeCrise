@@ -16,6 +16,14 @@ The classes include:
 4. Missing or found people
 5. Unrelated
 
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/wordclouds.PNG" width="1000" style="vertical-align:middle">
+
+Our analysis focuses on three disaster events for analysis:
+
+1. Cyclone Idai
+2. Greece Wildfires
+3. Maryland Floods
+
 This can allow public support systems such as police officers, firefighters and rescue operatives to gauge a better understanding of the situation as well as keep track of various public safety records.
 
 ## How we built it
