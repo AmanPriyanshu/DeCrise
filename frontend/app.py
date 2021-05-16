@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import time
-from deploy import test
+from test import test
 
 st.markdown("""
 <style>
@@ -21,5 +21,4 @@ if st.button("Process"):
     if data_file is not None:
         df = pd.read_csv(data_file)
         df = test(df)
-        df = pd.read_json(df)
         st.write(df)
