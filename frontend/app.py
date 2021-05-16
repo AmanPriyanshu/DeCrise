@@ -19,8 +19,6 @@ st.markdown('<p class="color-font">DeCrise</p>', unsafe_allow_html=True)
 st.subheader("Dataset")
 data_file = st.file_uploader("Upload CSV", type=['csv'])
 
-st.write(str(os.listdir()))
-
 if st.button("Process"):
     if data_file is not None:
         df = pd.read_csv(data_file)
