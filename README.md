@@ -38,6 +38,8 @@ Word Embeddings are memory intensive and we used `Effective Dimensionality Reduc
 
 Creating a continual and federated learning algorithm for crisis management is a novel approach. Although proposed before it utilised sentence encoders which are high computation and memory intensive making it impossible to deploy. Therefore, we used GloVe embeddings and further contracted their effective dimensions following Raunak et al.'s `Effective Dimensionality Reduction for Word Embeddings`.
 
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/progression.jpg" width="700" style="vertical-align:middle">
+
 Deploying an online/life-long learning NLP model for crisis management. The utilization of a volunteer system, further crowdsources the learning capacity of the model, making it more diverse and learn across a lot more samples than individual contributors could ever do.
 
 A project which potentially could save lives or make resource management easier and more efficient during a real crisis or natural/man-made disaster.
