@@ -17,7 +17,7 @@ def test(df):
 	x = x.flatten()
 	x = convert_sentences(x)
 
-	with open('text_classifier.pk', 'rb') as f:
+	with open('./frontend/text_classifier.pk', 'rb') as f:
 		clf = pickle.load(f)
 
 	y = clf.predict(x)
