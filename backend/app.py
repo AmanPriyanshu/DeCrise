@@ -4,6 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 import numpy as np
 from model_trainer import train
+from model_helper import get_weights_from_json, asynchronous_update
 
 WORD_LIMIT = 10
 
@@ -29,3 +30,11 @@ def train_model():
   hyperparameters = request.get_json()
   score = train(epochs=hyperparameters['epochs'])
   return jsonify({'score': score})
+
+@app.route('/volunteer', moethods=['POST'])
+def get_volunteer_model():
+	model = request.get_json()
+	weights = get_weights_from_json(model)
+	asynchronous_update(weights)
+	return jsonify({})
+	
