@@ -30,6 +30,8 @@ The aggregation is done using the federated averaging model. At the local traini
 
 We used he HumAID Twitter dataset which consists of several thousands of manually annotated tweets that have been collected during 19 major natural disaster events including earthquakes, hurricanes, wildfires, and floods, which happened from 2016 to 2019 across different parts of the World (Alam et al., 2021). 
 
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/Figure_1.png" width="300" style="vertical-align:middle">
+
 ## Challenges we ran into
 
 Word Embeddings are memory intensive and we used `Effective Dimensionality Reduction for Word Embeddings - Vikas Raunak et al.` to reduce memory demand. In our utilization of the above library, we also contributed to the open-source community by creating an executable Python3 version of it.
