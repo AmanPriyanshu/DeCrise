@@ -1,7 +1,7 @@
 # DeCrisis
 ## Introduction
 
-<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/Disaster-collage.png" width="500">
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/Disaster-collage.png" width="500" class="center">
 
 DeCrisis is an online platform that acts as an aggregator for public support/utility services for fast-response during a major crisis or disaster. We utilize the power of social media, which acts as a warehouse for important information during the sudden onset of a natural or manmade disaster. We bring together the concepts of both continual and federated learning to create a volunteer-supported, learning system for the quick response and integral information retrieval. We employed Flask and Heroku to deploy a backend, which incorporates the federated averaging algorithm to learn from models trained across multiple volunteer systems. Which is then deployed on Streamlit with easy to understand UI to allow newcomers to navigate DeCrisis easily. Our model uses continual learning to keep a progressing learning feed so as to learn features from the recent most events. Finally, the tweets are scraped using the Twitter-API and a feed-forward neural network classifies them across 5 different classes.
 
