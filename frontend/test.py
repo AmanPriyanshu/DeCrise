@@ -6,6 +6,10 @@ import numpy as np
 from helper import convert_sentences, preprocessor, open_csv
 from sklearn.ensemble import RandomForestClassifier
 
+'''
+Health and Accuracy checks
+'''
+
 labels = ['displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian']
 
 def test(df):
