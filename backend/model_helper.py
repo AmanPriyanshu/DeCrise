@@ -8,7 +8,7 @@ class ModelManager:
 		self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 		self.model.load_state_dict(torch.load(model_path, map_location=self.device))
 
-	def get_weights(self, dtype=np.float32):
+	def get_weights_from_json(self, dtype=np.float32):
 		weights = []
 		for layer in self.model:
 			try:
@@ -17,7 +17,7 @@ class ModelManager:
 				continue
 		return np.array(weights)
   
-	def set_weights(self, weights):
+	def asynchronous_update(self, weights):
 		index = 0
 		for layer_no, layer in enumerate(self.model):
 			try:
