@@ -123,6 +123,6 @@ if __name__ == '__main__':
 
 	train_x, train_y, test_x, test_y = Dataset().load_csv()
 
-	m = MNIST_PAQ(filename=filename, r=r, number_of_clients=number_of_clients, aggregate_epochs=aggregate_epochs, local_epochs=local_epochs)
+	m = DeCrise(filename=filename, r=r, number_of_clients=number_of_clients, aggregate_epochs=aggregate_epochs, local_epochs=local_epochs)
 	train_x, train_y = m.client_generator(train_x, train_y)
 	m.train_aggregator({'x':train_x, 'y':train_y}, {'x':test_x, 'y':test_y})
