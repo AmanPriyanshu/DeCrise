@@ -22,15 +22,13 @@ This can allow public support systems such as police officers, firefighters and 
 
 We used Streamlit for creating our website. Our goal with the site was to create an easy to understand and navigate website. We used a minimalistic design coupled with a backend hosted on Heroku. Our backend allows volunteers/support systems to push locally trained models for aggregation on the central server at Streamlit. At the central server, the regularization function is used to check for variational changes, from previously trained models. If found, we send the aggregated model for further analysis on a test set, however, if within limits we apply it as the new model.
 
-<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/aggstep.PNG" width="300" style="vertical-align:middle">
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/code.PNG" width="700" style="vertical-align:middle">
 
 The aggregation is done using the federated averaging model. At the local training step of the federated methodology, a regularization function taken from `Learning without Forgetting - Li and Hoiem` is used for training the model and to prevent overfitting on recent/new training data. The model was deployed and trained over PyTorch so as to increase transperancy and ease of use between the central host server and the volunteers training the model.
 
-<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/local_update.PNG" width="300" style="vertical-align:middle">
-
 We used he HumAID Twitter dataset which consists of several thousands of manually annotated tweets that have been collected during 19 major natural disaster events including earthquakes, hurricanes, wildfires, and floods, which happened from 2016 to 2019 across different parts of the World (Alam et al., 2021). 
 
-<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/Figure_1.png" width="300" style="vertical-align:middle">
+<img src="https://github.com/AmanPriyanshu/DeCrise/blob/main/images/Figure_1.png" width="600" style="vertical-align:middle">
 
 ## Challenges we ran into
 
