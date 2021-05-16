@@ -33,8 +33,9 @@ def train_model():
 
 @app.route('/volunteer', moethods=['POST'])
 def get_volunteer_model():
+	mm = ModelManager()
 	model = request.get_json()
-	weights = get_weights_from_json(model)
-	asynchronous_update(weights)
+	weights = mm.get_weights_from_json(model)
+	mm.asynchronous_update(weights)
 	return jsonify({})
 	
