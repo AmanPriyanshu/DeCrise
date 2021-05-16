@@ -5,11 +5,12 @@ from tqdm import tqdm
 from load_dataset import Dataset
 import os
 from model_generator import generate_model
+from regularized_loss import continual_learning_loss
 
 class DeCrise:
 	def __init__(self, filename="./models/model.pt", number_of_clients=1, aggregate_epochs=10, local_epochs=5, precision=7, r=1.0):
 		self.model = None
-		self.criterion = torch.nn.CrossEntropyLoss()
+		self.criterion = continual_learning_loss()
 		self.optimizer = None
 		self.number_of_clients = number_of_clients
 		self.aggregate_epochs = aggregate_epochs
