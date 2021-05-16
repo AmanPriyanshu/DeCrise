@@ -19,7 +19,7 @@ def preprocessor(X):
 		documents.append(document)
 	return documents
 
-def get_tfidf(path='vectorizer.pk'):
+def get_tfidf(path='./frontend/vectorizer.pk'):
     with open(path, 'rb') as f:
         tfidfconverter = pickle.load(f)
     return tfidfconverter
@@ -28,7 +28,7 @@ def convert_sentences(x):
 	tfidfconverter = get_tfidf()
 	return tfidfconverter.transform(x).toarray()
 
-def open_csv(path='data.csv'):
+def open_csv(path='./frontend/data.csv'):
 	df = pd.read_csv(path)
 	df = df.values
 	return df.T[0], df.T[1]
